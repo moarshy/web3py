@@ -39,3 +39,10 @@ To interact with the deployed contract:
 python interact.py
 ```
 
+### Errors installing eth-brownie
+
+What worked
+```bash
+python=3.8
+pip install "cython<3.0.0" && pip install --no-build-isolation eth-brownie
+```
