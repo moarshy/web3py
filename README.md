@@ -46,3 +46,33 @@ What worked
 python=3.8
 pip install "cython<3.0.0" && pip install --no-build-isolation eth-brownie
 ```
+
+### Deploying ProofOfSynthesis with eth-brownie
+1. Install eth-brownie
+
+If you haven't installed eth-brownie, use the following command:
+
+```bash
+pip install "cython<3.0.0" && pip install --no-build-isolation eth-brownie
+```
+
+2. Navigate to the Project Directory
+```bash
+cd path/to/proof_of_synthesis
+```
+Replace path/to/proof_of_synthesis with the actual path to your proof_of_synthesis project directory.
+
+3. Compile the Smart Contract
+Compile the smart contract using Brownie:
+```bash
+brownie compile
+```
+This step will compile all Solidity files in your project.
+
+4. Deploy the Contract
+Execute the deployment script located in the scripts directory:
+
+```bash
+brownie run scripts/deploy
+```
+This command will run the deploy.py script, which handles the deployment of your ProofOfSynthesis contract and interactions with the contract.
